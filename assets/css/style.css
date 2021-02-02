@@ -13,7 +13,11 @@
 body, main{
     padding: 0;
     margin: 0;
+
+
 }
+
+
 
 p, a{
     font-family: "Larish neue"; 
@@ -26,6 +30,13 @@ h1, h2{
     padding: 0;
     margin: 0;
 }
+
+h3{
+    font-family: "Larish neue";
+
+}
+
+
 
 /* *   defining black section  */
 
@@ -166,7 +177,7 @@ h1, h2{
 
 
 /* ************************** */
-/* *        First PART - WHITE            */
+/* *        SECOND PART - WHITE            */
 /* ************************** */
 
 #white_bg_1{
@@ -224,9 +235,6 @@ h1, h2{
 }
 
 
-
-
-
 /* * TEXT ALIGN IN THE MIDDLE */
 
 
@@ -252,4 +260,178 @@ h1, h2{
     padding: 0;
     line-height: 180%;
 }
+
+
+/* ************************** */
+/* *        SECOND BLACK PART            */
+/* ************************** */
+
+/* *  BG Area black and text */
+
+#black_bg_2{
+    height: 150vh;
+    width: 100vw;
+}
+
+.text_wrap{
+    width: 84vw;
+    margin-left: 8vw;
+    padding-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_wrap h2{
+    margin: 0;
+    padding: 0 20vw 0 0;
+    line-height: 100%;
+    font-size: 6em;
+}
+.text_wrap h3{
+
+    font-size: 1.9em;
+    line-height: 105%;
+}
+
+.text_wrap p, .text_wrap span{
+    color: #b4afaf;
+    margin-top: 0;
+
+}
+
+.text_wrap span{
+    display: inline-block;
+    width: 15px;
+    height: 2px;
+    background-color: #b4afaf;
+    margin-bottom: 3px;
+
+}
+
+.text_wrap article:last-of-type{
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* *  3 PICTURES in COLLAGE */
+
+
+#images3_collide{
+    position: relative;
+    /* overflow: hidden;
+    z-index: -10; */
+    width: 100vw;
+
+}
+
+#images3_collide img{
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+}
+
+#img__1{
+    background-color: rgb(238,238,238);
+    width: 50vw;
+    left: 14vw;
+    top: 200px;
+}
+
+/* *  INFINITE ROTATION */
+
+#wrapper_rotate{
+    display: block;
+    overflow: hidden;
+    width: 100vw;
+
+}
+
+@keyframes rotating{
+    from{
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+#rounded_circle{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    top: -150px;
+}
+
+#img__3{
+
+    width: 25vw;
+    right: 230px;
+    top:250px;
+    z-index: 2;
+}
+
+#img__2{
+    /* position: absolute; */
+    width: 45vw;
+    /* top: 450px;
+    right: -100px; */
+    /* z-index: 10; */
+    transform: rotate();
+    animation: rotating 5s linear infinite;
+    overflow: hidden;
+    display: inline;
+    margin-left: 70vw;
+    margin-top: 0px;
+    top: 0px;
+}
+
+
+
+/* ************************** */
+/* *        SECOND WHITE PART            */
+/* ************************** */
+
+
+#white_bg_2 .text_wrap{
+    padding-top: 0;
+}
+
+ #white_bg_2 p{
+    color: black;
+}
+
+#white_bg_2 span{
+    background-color: black
+}
+
+/* *   2 Pictures in the middle */
+
+#two_pics_center{
+    position: relative;
+}
+
+#two_pics_center img{
+    position: absolute;
+}
+
+#num_pic1{
+    width: 25vw;
+    top:365px;
+    left: 300px;
+    z-index: 1;
+}
+
+#num_pic2{
+    width: 50vw;
+    right: 8vw;
+    top:200px
+}
+
+
+
+
+
+
+
 
