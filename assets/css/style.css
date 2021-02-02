@@ -1,0 +1,255 @@
+
+/* ************************** */
+/* *        GENERALS            */
+/* ************************** */
+
+@font-face{
+    font-family: "Larish neue";
+    src: url("../fonts/Larish\ Neue\ Semibold.woff2") format("woff2"),
+        url("../fonts/LarishNeueSemibold.woff") format("woff");
+}
+
+
+body, main{
+    padding: 0;
+    margin: 0;
+}
+
+p, a{
+    font-family: "Larish neue"; 
+    font-family: 'Work Sans', sans-serif;
+    display: inline-block;
+}
+h1, h2{
+    font-family: "Larish neue";
+    font-size: 7em;
+    padding: 0;
+    margin: 0;
+}
+
+/* *   defining black section  */
+
+.black_bg{
+    background: black;
+    color: white;
+}
+
+#black_bg_1{
+    width: 100vw;
+    height: 330vh;
+}
+
+.white_bg{
+    background: white;
+    color: black;
+}
+
+/* *       border-text      */
+.stroking_titel{
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+
+
+
+/* ************************** */
+/* *        First PART - BLACK            */
+/* ************************** */
+
+#page1, #page3{
+    width: 84vw;
+    height: 100vh;
+    margin-left: 8vw;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title1{
+    padding-top: 20vh;
+}
+
+
+/* *     TITLE H1 CROSSING BORDERS */
+.over_word{
+    margin: 0;
+    padding: 0;
+    line-height: 80%;
+}
+.under_word{
+    margin: 0;
+    padding: 0;
+    line-height: 70%;
+    top: -10px;
+}
+
+/* #title1{
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+#title1 p{
+    font-size: 1.2em;
+}
+
+#title1 p:first-child{
+    margin-bottom: 30px;
+}
+#title1 p:last-child{
+    margin-top: 30px;
+}
+
+/* *    Baer and RSVO link as flex */
+
+#baer_link{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+    /* align-self: flex-end; */
+}
+
+#baer_link a{
+    color: white;
+    text-decoration: none;
+    border: 1px #7b7676 solid;
+    padding: 14px 30px;
+    font-size: 1.2em;
+}
+
+#baer_link a:hover{
+    background-color: #fff;
+    color:black;
+    transition: .8s;
+}
+
+
+/* *    SECOND PAGE -  TEXT AREA */
+
+#page2{
+    margin-top: 80px;
+    width: 92vw;
+    height: 100vh;
+    margin-left: 8vw;
+    text-align: left;
+}
+
+#page2 h1{
+    font-size: 7rem;
+    line-height: 100%;
+}
+
+/* *    THIRD PAGE */
+#page3{
+    width: 92vw;
+    text-align: left;
+    background: url("../img/map.svg") right/contain no-repeat;
+    margin-bottom: 500px;
+    background-color: black;
+}
+
+#page3 h1{
+    font-size: 6.5em;
+}
+
+#page3 p{
+    font-size: 1.2em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 100%;
+}
+
+
+
+/* ************************** */
+/* *        First PART - WHITE            */
+/* ************************** */
+
+#white_bg_1{
+    width: 100vw;
+    height: 260vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;   /*! for imgs*/
+}
+
+/* * IMAGES ALIGN */
+#white_bg_1 img{
+    display: inline-block;
+    width: 320px;
+    position: absolute;
+
+}
+
+#white_bg_1 #img-1{
+    top: -50px;
+    right: 100px;
+    /* width: 320px; */
+}
+#white_bg_1 #img-2{
+    width: 280px;
+    top: 240px;
+    left: 50px;
+}
+#white_bg_1 #img-3{
+    width: 280px;
+    top: 580px;
+    right: 0px;
+}
+#white_bg_1 #img-4{
+    top: 770px;
+    left: 250px;
+}
+#white_bg_1 #img-5{
+    top: 960px;
+    right: 150px;
+}
+#white_bg_1 #img-6{
+    width: 280px;
+    bottom: 360px;
+    left: 0px;
+}
+#white_bg_1 #img-7{
+    width: 380px;
+    bottom: -50px;
+    right: 250px;
+}
+
+
+
+
+
+/* * TEXT ALIGN IN THE MIDDLE */
+
+
+#text_placement{
+    height: 160vh;
+    width: 35vw;
+    /* border: 1px red solid; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#text_placement h2{
+    font-size: 5.5em;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+}
+#text_placement p{
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+    line-height: 180%;
+}
+
