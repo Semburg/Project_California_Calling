@@ -117,14 +117,14 @@ h3{
 
 /* *    Baer and RSVO link as flex */
 
-#baer_link{
+#baer_link {
     display: flex;
     justify-content: space-between;
     margin-top: 10vh;
     /* align-self: flex-end; */
 }
 
-#baer_link a{
+#baer_link a, #text_last a{
     color: white;
     text-decoration: none;
     border: 1px #7b7676 solid;
@@ -132,7 +132,7 @@ h3{
     font-size: 1.2em;
 }
 
-#baer_link a:hover{
+#baer_link a:hover, #text_last a:hover{
     background-color: #fff;
     color:black;
     transition: .8s;
@@ -392,6 +392,9 @@ h3{
 /* *        SECOND WHITE PART            */
 /* ************************** */
 
+#white_bg_2{
+    height: 200vh;
+}
 
 #white_bg_2 .text_wrap{
     padding-top: 0;
@@ -409,6 +412,7 @@ h3{
 
 #two_pics_center{
     position: relative;
+    margin-bottom: 150px;
 }
 
 #two_pics_center img{
@@ -425,8 +429,142 @@ h3{
 #num_pic2{
     width: 50vw;
     right: 8vw;
-    top:200px
+    top:200px;
+    
 }
+
+
+/* ************************** */
+/* *        LAST BLACK PART            */
+/* ************************** */
+
+/* * TEXT PART */
+#black_bg_3{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#text_last{
+
+    width: 40vw;
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+#text_last p{
+    margin: 0;
+}
+
+#text_last h4{
+    font-size: 2em;
+    line-height: 140%;
+    font-family: "Larish neue";
+    font-weight: 300;
+    margin: 20px 0;
+    width: 90%;
+    
+}
+
+
+/* * ""FOOTER"" PART */
+
+#footer_like{
+
+    width: 84vw;
+    margin-left: 8vw;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#social_rigt{
+    display: flex;
+    flex-direction: column;
+}
+
+#social_rigt p:last-of-type{
+    margin-top: 0;
+}
+
+
+
+#social_imgs img{
+    width: 20px;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#charite_{
+    padding-right: 100px;
+}
+
+#charite_ img{
+    display: inline-block;
+    width: 80px;
+}
+
+/* *  RUNNGIN TET ON WGITE BACKGROUND */
+
+#running_text{
+    position: absolute;
+    top:200px;
+    right: -450px;
+    width: 110vw;
+    height: 130px;
+    background: #fff;
+    color: #000;
+    transform: rotate(45deg);
+}
+
+/* #run_wrapper{
+    animation: text_run 5s linear infinite;
+} */
+#running_text h1{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 200%;
+    /* padding-left: 100%; */
+    margin-left: 0%;
+    animation: text_run 18s linear infinite;
+    
+}
+
+.stroke_text{
+    display: inline-block;
+    color: #fff;
+    -webkit-text-stroke: 2px black;
+}
+
+.stroke_text b{
+    color: #000;
+}
+/* 
+.black_text{
+    display: inline;
+    color: black;
+    animation: text_run 5s linear infinite;
+
+} */
+
+@keyframes text_run{
+    0%{
+        transform: translate(60%,0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+
+
+
 
 
 
