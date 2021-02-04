@@ -692,7 +692,7 @@ h3{
     }
 
     #running_text{
-        width: 280vh;
+        width: 380vh;
         right:-900px;
         transform: rotate(75deg);
     }
@@ -779,10 +779,7 @@ h3{
         font-weight: 300;
         margin: 70px 0;
         width: 95%;
-        
     }
-
-    
 }
 
 
